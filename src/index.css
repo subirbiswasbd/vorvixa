@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-bengali: 'Hind Siliguri', 'Plus Jakarta Sans', sans-serif;
+    --font-mono: 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+
+  body {
+    background-color: #070913;
+    color: #e2e8f0;
+    font-family: var(--font-sans);
+    min-height: 100vh;
+    overflow-x: hidden;
+    selection-background-color: #f59e0b;
+    selection-color: #070913;
+  }
+}
+
+/* Custom scrollbars for code & panels */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b0f1d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+.font-bengali {
+  font-family: var(--font-bengali);
+}
+
+.font-mono-code {
+  font-family: var(--font-mono);
+}
+
+/* Glassmorphism card utilities */
+.glass-panel {
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.75) 0%, rgba(11, 15, 29, 0.85) 100%);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.glass-panel-gold {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.05) 0%, rgba(15, 23, 42, 0.85) 100%);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+}
+
+.glow-orange {
+  box-shadow: 0 0 25px -5px rgba(245, 158, 11, 0.35);
+}
+
+.glow-blue {
+  box-shadow: 0 0 25px -5px rgba(59, 130, 246, 0.3);
+}

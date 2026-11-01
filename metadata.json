@@ -1,0 +1,6 @@
+{
+  "name": "VORVIXA AI Movies.json Generator",
+  "description": "AI-powered movie and web-series raw text parser that generates perfectly structured, schema-compliant movies.json files with batch extraction and validation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
